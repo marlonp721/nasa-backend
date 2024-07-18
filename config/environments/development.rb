@@ -14,6 +14,9 @@ Rails.application.configure do
   # Show full error reports.
   config.consider_all_requests_local = true
 
+  # Credencials for JWT
+  config.jwt_secret = "308781410972c3cd7dc8e18e314d8bcb70958bb401e5d69cf3adccd0a9edaedf7d53812213b9f398bd9f2937a1d4fb36638c71eb76fd0500a291d267cb0b341b"
+
   # Enable server timing
   config.server_timing = true
 
