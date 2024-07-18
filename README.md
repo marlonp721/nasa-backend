@@ -4,6 +4,13 @@
 
 ruby 3.2.2 y Rails 7.1.3.4
 
+* Clonar el repositorio
+
+```console
+git clone https://github.com/marlonp721/nasa-backend.git
+cd nasa-backend
+```
+
 + Asegurarse de tener postgreSQL
 
 ```console
