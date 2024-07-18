@@ -1,27 +1,29 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
 * Ruby version
 
-* System dependencies
+ruby 3.2.2 y Rails 7.1.3.4
 
-* Configuration
+* Instalar dependencias
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
+```console
 bundle install
+```
+
+* Crear la base de datos y realizar las migraciones
+
+```console
+rails db:create
+rails db:migrate
+```
+
+* Correr el rake para obtener la data de la API de la NASA
+
+```console
 rails nasa:fetch_data
+```
+* Correr el proyecto
+
+```console
+rails server
+```
