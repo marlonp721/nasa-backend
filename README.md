@@ -4,6 +4,12 @@
 
 ruby 3.2.2 y Rails 7.1.3.4
 
++ Asegurarse de tener postgreSQL
+
+```console
+psql --version
+```
+
 * Instalar dependencias
 
 ```console
