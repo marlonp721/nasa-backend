@@ -7,6 +7,6 @@ class User < ApplicationRecord
   has_many :favorite_asteroids, through: :favorites, source: :favoritable, source_type: 'Asteroid'
   
   def generate_jwt
-    JWT.encode({ id: id, exp: 10.minutes.from_now.to_i }, Rails.application.config.jwt_secret)
+    JWT.encode({ id: id, exp: 1.hours.from_now.to_i }, Rails.application.config.jwt_secret)
   end
 end
