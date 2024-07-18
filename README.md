@@ -17,7 +17,7 @@ rails db:create
 rails db:migrate
 ```
 
-* Correr el rake para obtener la data de la API de la NASA
+* Correr el rake para obtener la data de la API de la NASA (este paso es importante porque se registran las imagenes y asteroides en nuestra base de datos local)
 
 ```console
 rails nasa:fetch_data
@@ -26,4 +26,10 @@ rails nasa:fetch_data
 
 ```console
 rails server
+```
+
+* Verificar que este corriendo el proyecto
+
+```console
+http://localhost:3000/
 ```

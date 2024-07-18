@@ -1,7 +1,7 @@
 namespace :nasa do
     desc "Fetch APOD and Near-Earth Objects data from NASA API"
     task fetch_data: :environment do
-      api_key = 'Kl5kPSdvkc1EW4eJ2WrbeZrh1GTfffrHsFQ8ieLi'
+      api_key = Rails.application.config.api_key_nasa
       nasa_service = NasaService.new(api_key)
       
       start_date = 7.days.ago.strftime('%Y-%m-%d')
